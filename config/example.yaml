@@ -1,10 +1,6 @@
----
-regions:
+-regions:
 - "global" # This is for all global resource types e.g. IAM
-- "eu-west-1"
-
-account-blocklist:
-- 1234567890
+- "eu-east-1"
 
 # optional: restrict nuking to these resources
 resource-types:
@@ -12,24 +8,18 @@ resource-types:
   - IAMUser
   - IAMUserPolicyAttachment
   - IAMUserAccessKey
-  - S3Bucket
-  - S3Object
-  - Route53HostedZone
-  - EC2Instance
-  - CloudFormationStack
-  - MSKCluster
 
 accounts:
-  555133742:
+  164369628676:
     filters:
       IAMUser:
-      - "admin"
+      - "AWSNUKE"
       IAMUserPolicyAttachment:
       - property: RoleName
-        value: "admin"
+        value: "AWSNUKE"
       IAMUserAccessKey:
       - property: UserName
-        value: "admin"
+        value: "AWSNUKE"
       S3Bucket:
       - "s3://my-bucket"
       S3Object:
@@ -48,4 +38,4 @@ accounts:
         value: ".+"
       EC2Image:
       - property: "tag:release"
-        value: "production"
+        value: "production"v
