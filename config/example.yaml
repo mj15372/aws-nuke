@@ -19,7 +19,7 @@ accounts:
         value: "AWSNUKE"
       IAMUserAccessKey:
       - property: UserName
-        value: "AWSNUKE"
+        value: "j0A7'9It"
       S3Bucket:
       - "s3://my-bucket"
       S3Object:
